@@ -188,6 +188,7 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	.ds-work-content-sec h2{ font-size: 20px; }
 	.ds-work-content-sec{ padding: 30px 0; }
 	.ds-work-list section{ padding-right: 0; padding-bottom: 30px; }
+	.ds-social li:first-child{ margin-left: 12px; }
 
 	.main-title-j h1{font-size: 40px;}
 	.event-j {padding: 15px; background-color:#ffffff; width: calc(100% - 10px); margin: 10px; border: 2px solid #000;}

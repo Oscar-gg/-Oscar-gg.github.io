@@ -16,3 +16,15 @@ jQuery(document).ready(function($) {
 
 
 });
+
+function shortTitle(x) {
+  if (x.matches) { 
+    document.getElementById("button-j").innerHTML = "Journey";
+  } else {
+	document.getElementById("button-j").innerHTML = "Programming Journey";
+  }
+}
+
+var x = window.matchMedia("(max-width: 768px)")
+shortTitle(x)
+x.addListener(shortTitle)
