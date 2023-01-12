@@ -6,6 +6,8 @@ const eventData = [
     "date": "November 2022",
     "description": "This Hackathon was organized by the Imperial College Business School, Tecnológico de Monterrey, and other organizations. For this event, my team and I developed a mobile application using React Native and a database. I was in charge of developing some of the backend and a little bit of the frontend. While working on this project, I realized that I first needed to learn React and Web Development before being able to fully comprehend React Native and thus decided to start learning HTML, CSS, JavaScript, and React.",
     "id": "hackathon2",
+    "link": "https://github.com/CarlosMtz1281/Hack_London",
+    "img": "hack-london.jpg"
   },
   {
     "title": "Programmer at Roborregos",
@@ -19,7 +21,8 @@ const eventData = [
     "date": "September 2022",
     "description": "HackMty, the largest student Hackathon in Mexico, was the first event of this type that I was able to attend. As many Hackathons, it consisted of selecting a challenge and developing a solution in less than 24 hours. For this event, my teammates and I chose to create a mobile application to solve a problem related with the management of water, a relevant need at that time because there was a water shortage in Northern Mexico when HackMty took place. For this application we used Kivy, a python framework for mobile apps.",
     "id": "hackathon",
-    "link": "https://github.com/Oscar-gg/Atemoc"
+    "link": "https://github.com/Oscar-gg/Atemoc",
+    "img": "hack-mty.jpg;hack-mty-2.jpg"
   },
   {
     "title": "Entered competitive programming group",
@@ -38,8 +41,9 @@ const eventData = [
     "title": "Robochamp competition",
     "date": "April 2022",
     "description": "This competition consisted of developing a remote-controlled robot using Arduino in teams of 4. In this competition, where the robot needed to surpass a series of challenges, I was in charge of the programming area and learned about another area of computer science: robotics. An important aspect was to make the code flexible as the components sometimes didn’t work as expected. E.g. Motors moved at different speeds, voltage could affect results, etc.",
-    "id": "robochamp"
-
+    "id": "robochamp",
+    "link": "https://www.instagram.com/p/CdZSOt1OSqr/",
+    "img": "robochamp.jpg"
   },
   {
     "title": "Won 17° International Science competition in computer science section",
@@ -47,15 +51,15 @@ const eventData = [
     "description": "After having participated the year before in the competition, hosted by Tecnológico de Monterrey, I studied the syntax of both c++ and python to a greater extent and was able to win first place at this coding competition directed to high school students. Learning about the syntax of the languages allowed me to consolidate my foundations and learn about new concepts such as reference variables, ways to format strings, and ‘computational thinking’. From this event I learned that it’s relatively easy to learn new languages because many of the concepts are transferable.",
     "id": "compp2",
     "link": "https://admision.tec.mx/concurso-de-ciencias/resultados2022",
-    "img": "work-1.jpg"
+    "img": "comp-programming.jpg"
   },
   {
     "title": "Developed To-do list mobile app",
     "date": "September 2021 - May 2022",
     "description": "As part of the Internal Assessment for the IB CS course, I had to develop an application that helped solve a problem of a client of our selection. For this project, I developed a mobile app for android using java. The purpose of the application was to manage a series of tasks and organize them in relation to the category of the task, status, priority, and people related to a given task. The application is able to store, sort, filter, and maintain a log of tasks marked as completed to improve management. From this project, I learned about the system life cycle and mobile development at a fast pace, as well as the importance of taking into account the client’s opinion.",
     "id": "mobile",
-    "link": "https://github.com/Oscar-gg/TaskRegister"
-
+    "link": "https://github.com/Oscar-gg/TaskRegister",
+    "img": "todo-app.jpg"
   },
   {
     "title": "Developed “Save links”, a CLI app",
@@ -75,7 +79,7 @@ const eventData = [
     "title": "Top 20 at 16° International Science competition in computer science section",
     "date": "April 2021",
     "description": "During my sophomore year of high school, I entered my first competition related to coding. This time, the competition was hosted by Tecnológico de Monterrey and it consisted of c++ and python questions. The questions were of type multiple choice and fill in the blanks. From this contest I learned the importance of learning independently, because c++ and python were both languages that I hadn’t seen in classes and only read of them in my free time; I realized that I had a lot to learn and that there are a lot of interesting technologies out there.",
-    "id": "compp"
+    "id": "compp",
   },
   {
     "title": "Developed autohotkey Script",
@@ -89,7 +93,6 @@ const eventData = [
     "date": "August 2020 - May 2022",
     "description": "The first formal education I got regarding computer science was during my sophomore and senior years of high school, where I had the opportunity to take Computer Science SL at PrepaTec Valle Alto. In here, I learned about the fundamentals, OOP, java, and was able to work on several projects involving desktop and mobile development.",
     "id": "ibcs",
-    "img": "profile-image.jpg"
   }
 ]
 
@@ -125,8 +128,6 @@ for (let i = 0; i < eventAmount; i++) {
   divDescription.classList.add("content-j");
   const divDescriptionText = document.createTextNode(eventData[i].description);
   divDescription.appendChild(divDescriptionText);
-
-  divEvent.appendChild(divDescription);
 
   let bBar = 0;
 
@@ -172,7 +173,7 @@ for (let i = 0; i < eventAmount; i++) {
         captionText.innerHTML = eventData[i].title;
         header.style.display = "none";
       })
-      
+
       bBar.appendChild(icon);
     }
   }
@@ -181,8 +182,48 @@ for (let i = 0; i < eventAmount; i++) {
     divEvent.appendChild(bBar);
   }
 
+  // Add description after bottom bar to select siblings that appear after bBar in main.css.
+  divEvent.appendChild(divDescription);
+
   container.appendChild(divEvent);
 }
+
+// Closure used to avoid polluting the global namespace.
+
+const handleModal = function () {
+  let closeM = true;
+  let modal = document.getElementById("modal-j");
+  let header = document.getElementById("site-header");
+  let span = document.getElementById("close-jm");
+  let img = document.getElementById("img-j");
+  let caption = document.getElementById("caption");
+
+  function addListeners() {
+    modal.addEventListener("click", () => {
+      if (closeM) {
+        modal.style.display = "none";
+        header.style.display = "block";
+      } else {
+        closeM = true;
+      }
+    }, false);
+
+    img.addEventListener("click", () => {
+      closeM = false;
+    }, false);
+
+    span.addEventListener("click", () => {
+      modal.style.display = "none";
+      header.style.display = "block";
+    });
+
+    caption.addEventListener("click", () => {
+      closeM = false;
+    }, false);
+  }
+
+  return addListeners();
+}();
 
 /*
 
@@ -196,6 +237,10 @@ Template using html:
                 November 2022
               </h5>
             </div>
+            <div class="bar-j">
+              <a href="_blank"><i class="material-icons ">link</i></a>
+              <i class="material-icons">image</i>
+            </div>
             <p class="content-j">
               This Hackathon was organized by the Imperial College Business School, Tecnológico de Monterrey, and other
               organizations. For this event, my team and I developed a mobile application using React Native and a
@@ -203,9 +248,5 @@ Template using html:
               working on this project, I realized that I first needed to learn React and Web Development before being
               able to fully comprehend React Native and thus decided to start learning HTML, CSS, JavaScript, and React.
             </p>
-            <div class="bar-j">
-              <a href="_blank"><i class="material-icons ">link</i></a>
-              <i class="material-icons">image</i>
-            </div>
           </div>
 */
