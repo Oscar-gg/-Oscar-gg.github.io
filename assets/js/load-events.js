@@ -5,25 +5,28 @@ const eventData = [
     "title": "Participated in London Hackathon",
     "date": "November 2022",
     "description": "This Hackathon was organized by the Imperial College Business School, Tecnológico de Monterrey, and other organizations. For this event, my team and I developed a mobile application using React Native and a database. I was in charge of developing some of the backend and a little bit of the frontend. While working on this project, I realized that I first needed to learn React and Web Development before being able to fully comprehend React Native and thus decided to start learning HTML, CSS, JavaScript, and React.",
-    "id": "hackathon2"
+    "id": "hackathon2",
   },
   {
     "title": "Programmer at Roborregos",
     "date": "October 2022 - Present",
     "description": "Joined Roborregos, a robotics team at Tecnológico de Monterrey that participates in international competitions and has a wide variety of active projects. As a team member, I have the opportunity to participate in relevant projects as a programmer and receive mentorship from more experienced students.",
-    "id": "roborregos"
+    "id": "roborregos",
+    "link": "https://www.instagram.com/p/Cj_46o7MHOI/"
   },
   {
     "title": "Participated in HackMty",
     "date": "September 2022",
     "description": "HackMty, the largest student Hackathon in Mexico, was the first event of this type that I was able to attend. As many Hackathons, it consisted of selecting a challenge and developing a solution in less than 24 hours. For this event, my teammates and I chose to create a mobile application to solve a problem related with the management of water, a relevant need at that time because there was a water shortage in Northern Mexico when HackMty took place. For this application we used Kivy, a python framework for mobile apps.",
-    "id": "hackathon"
+    "id": "hackathon",
+    "link": "https://github.com/Oscar-gg/Atemoc"
   },
   {
     "title": "Entered competitive programming group",
     "date": "August 2022",
     "description": "During the first months since joining Tecnológico de Monterrey, I started attending weekly meetings organized by some students at campus in which competitive programming problems were analyzed and upsolved. In these meetings, I started learning about data structures and algorithms for solving common problems. In addition, I created an account for codeforces and started uploading my solved problems in a github repository.",
-    "id": "compp3"
+    "id": "compp3",
+    "link": "https://github.com/Oscar-gg/Programacion-Competitiva"
   },
   {
     "title": "B.S. In computer science at Técnológico de Monterrey",
@@ -36,30 +39,37 @@ const eventData = [
     "date": "April 2022",
     "description": "This competition consisted of developing a remote-controlled robot using Arduino in teams of 4. In this competition, where the robot needed to surpass a series of challenges, I was in charge of the programming area and learned about another area of computer science: robotics. An important aspect was to make the code flexible as the components sometimes didn’t work as expected. E.g. Motors moved at different speeds, voltage could affect results, etc.",
     "id": "robochamp"
+
   },
   {
     "title": "Won 17° International Science competition in computer science section",
     "date": "March 2022",
     "description": "After having participated the year before in the competition, hosted by Tecnológico de Monterrey, I studied the syntax of both c++ and python to a greater extent and was able to win first place at this coding competition directed to high school students. Learning about the syntax of the languages allowed me to consolidate my foundations and learn about new concepts such as reference variables, ways to format strings, and ‘computational thinking’. From this event I learned that it’s relatively easy to learn new languages because many of the concepts are transferable.",
-    "id": "compp2"
+    "id": "compp2",
+    "link": "https://admision.tec.mx/concurso-de-ciencias/resultados2022",
+    "img": "work-1.jpg"
   },
   {
     "title": "Developed To-do list mobile app",
     "date": "September 2021 - May 2022",
     "description": "As part of the Internal Assessment for the IB CS course, I had to develop an application that helped solve a problem of a client of our selection. For this project, I developed a mobile app for android using java. The purpose of the application was to manage a series of tasks and organize them in relation to the category of the task, status, priority, and people related to a given task. The application is able to store, sort, filter, and maintain a log of tasks marked as completed to improve management. From this project, I learned about the system life cycle and mobile development at a fast pace, as well as the importance of taking into account the client’s opinion.",
-    "id": "mobile"
+    "id": "mobile",
+    "link": "https://github.com/Oscar-gg/TaskRegister"
+
   },
   {
     "title": "Developed “Save links”, a CLI app",
     "date": "August 2021 - July 2022",
     "description": "Applying the knowledge obtained after finishing the course “Automate the Boring stuff with Python”, I developed a CLI app to save, open, delete, and I visualize previously saved links on the browser. The program uses pyautogui to interact with the web browser by sending keystrokes to select and copy links, maximize windows, and close tabs. Used app for personal use to efficiently save significant amounts of related links.",
-    "id": "py2"
+    "id": "py2",
+    "link": "https://github.com/Oscar-gg/save_links"
   },
   {
     "title": "Finished automate the boring stuff with python",
     "date": "August 2021",
     "description": "After having recognized the potential of python in the previous coding competition, I decided to learn by taking online courses in my free time and making projects. After lurking in subreddits related to programming for quite some time, I found limited time coupons to take Al Sweigart’s “Automate the boring stuff with python” for free and get a certification. Learning this language was interesting as it made me reflect about the decisions made when developing languages and the inherent trade offs that those decisions imply, such as speed of developments vs execution time, or dynamic vs static typing.",
-    "id": "py"
+    "id": "py",
+    "link": "https://www.udemy.com/certificate/UC-c75531f1-b8e0-45dc-b531-cf462781e773/"
   },
   {
     "title": "Top 20 at 16° International Science competition in computer science section",
@@ -71,13 +81,15 @@ const eventData = [
     "title": "Developed autohotkey Script",
     "date": "April 2021",
     "description": "One of the first scripts that I developed had the purpose of automating a daily task that I inevitably had during the pandemic: opening zoom classes and their related folders. I decided to make this project relatively close to the date I started programming because I figured out that it would be the fastest way to produce something useful for me, which would in turn motivate me to keep learning. In the end, the script saved me a couple of hours of opening zoom classes and automating basic tasks… but it took me nearly 15 hours of research, learning and trial and error to produce the script. 😅",
-    "id": "ahk"
+    "id": "ahk",
+    "link": "https://github.com/Oscar-gg/zoom-script"
   },
   {
     "title": "IB computer science course",
     "date": "August 2020 - May 2022",
     "description": "The first formal education I got regarding computer science was during my sophomore and senior years of high school, where I had the opportunity to take Computer Science SL at PrepaTec Valle Alto. In here, I learned about the fundamentals, OOP, java, and was able to work on several projects involving desktop and mobile development.",
-    "id": "ibcs"
+    "id": "ibcs",
+    "img": "profile-image.jpg"
   }
 ]
 
@@ -116,6 +128,59 @@ for (let i = 0; i < eventAmount; i++) {
 
   divEvent.appendChild(divDescription);
 
+  let bBar = 0;
+
+  if (eventData[i].link != undefined || eventData[i].img != undefined) {
+    bBar = document.createElement("div");
+    bBar.classList.add("bar-j");
+  }
+
+  if (eventData[i].link != undefined) {
+    const links = eventData[i].link.split(";");
+
+    for (let link of links) {
+      const newLink = document.createElement("a");
+      newLink.href = link;
+      newLink.target = "_blank";
+      const icon = document.createElement("i");
+      icon.classList.add("material-icons");
+      const textIcon = document.createTextNode("link");
+
+      icon.appendChild(textIcon);
+      newLink.appendChild(icon);
+      bBar.appendChild(newLink);
+    }
+  }
+
+  if (eventData[i].img != undefined) {
+    const images = eventData[i].img.split(";");
+    const modal = document.getElementById("modal-j");
+    const modalImg = document.getElementById("img-j");
+    var captionText = document.getElementById("caption");
+    var header = document.getElementById("site-header");
+
+    for (let img of images) {
+      const icon = document.createElement("i");
+      icon.classList.add("material-icons");
+      const textIcon = document.createTextNode("image");
+      icon.appendChild(textIcon);
+      let change = false;
+
+      icon.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = "assets/images/" + img;
+        captionText.innerHTML = eventData[i].title;
+        header.style.display = "none";
+      })
+      
+      bBar.appendChild(icon);
+    }
+  }
+
+  if (bBar !== 0) {
+    divEvent.appendChild(bBar);
+  }
+
   container.appendChild(divEvent);
 }
 
@@ -138,5 +203,9 @@ Template using html:
               working on this project, I realized that I first needed to learn React and Web Development before being
               able to fully comprehend React Native and thus decided to start learning HTML, CSS, JavaScript, and React.
             </p>
+            <div class="bar-j">
+              <a href="_blank"><i class="material-icons ">link</i></a>
+              <i class="material-icons">image</i>
+            </div>
           </div>
 */
