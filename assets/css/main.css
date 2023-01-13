@@ -219,8 +219,7 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	.intro-j p {width: 100%;}
 	#img-j {width: 100%;}
 	.expand-j{display: inline-block;}
-
-	/* .nav-menu .del-mob {display: none;} */
+	.nav-menu .del-mob {display: none;}
 }
 
 
