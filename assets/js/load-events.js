@@ -185,6 +185,33 @@ for (let i = 0; i < eventAmount; i++) {
   // Add description after bottom bar to select siblings that appear after bBar in main.css.
   divEvent.appendChild(divDescription);
 
+  // Add icon for devices with small screen width (phones).
+  
+  if (eventData[i].link != undefined || eventData[i].img != undefined) {
+    const divIcon = document.createElement("div");
+    divIcon.classList.add("expand-j");
+
+    const extendIcon = document.createElement("i");
+    extendIcon.classList.add("material-icons");
+    let textIcon = document.createTextNode("expand_more");
+    extendIcon.appendChild(textIcon);
+    divIcon.appendChild(extendIcon);
+
+    divIcon.addEventListener("click", () => {
+      if (textIcon.nodeValue == "expand_more") {
+        textIcon.nodeValue = "expand_less";
+        divDescription.style.padding = "0 0 40px 0";
+        bBar.style.height = "40px";
+      } else {
+        textIcon.nodeValue = "expand_more";
+        divDescription.style.padding = "0 0 0 0";
+        bBar.style.height = "0px";
+      }
+    });
+
+    divEvent.appendChild(divIcon);
+  }
+
   container.appendChild(divEvent);
 }
 
@@ -220,6 +247,8 @@ const handleModal = function () {
     caption.addEventListener("click", () => {
       closeM = false;
     }, false);
+
+
   }
 
   return addListeners();
