@@ -138,10 +138,10 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 .wrapper-j {display: flex; flex-wrap: wrap;}
 
 .main-title-j h1{font-weight: 600; font-size: 48px; line-height: 60px; color: #000; }
-.intro-j {display:flex; padding: 40px 0px; justify-content: flex-start;}
+.intro-j {flex-direction: column; display:flex; padding: 40px 0px; justify-content: flex-start;}
 .intro-j .index ol{font-size: 18px;}
 .intro-j .index h4{text-align: center; margin-bottom: 10px;}
-.intro-j p{color: #373737; font-size: 24px; line-height: 40px; font-weight: 300; margin-bottom: 60px; width: 50%; margin-right:20px}
+.intro-j p{color: #373737; font-size: 24px; line-height: 40px; font-weight: 300; margin-bottom: 60px; margin-right:20px}
 
 .event-j {padding: 15px 15px 0px 15px; background-color:#ffffff; width: calc(50% - 10px); margin: 10px; border: 2px solid #000; position: relative;}
 .event-j:nth-child(even) {margin-right: 0px;}
@@ -170,7 +170,8 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 .expand-j > .material-icons{float: right; font-size: 35px;}
 .expand-j > .material-icons:hover{color:#FFF}
 
-
+.container2 {display: flex; flex-direction: row; margin-right: auto; margin-left: auto; }
+.underline > a {text-decoration: underline;}
 
 /*-------------------------------------------------------------------------------
  Responsive XS Style @media (max-width: 767px) 
@@ -220,12 +221,12 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	#img-j {width: 100%;}
 	.expand-j{display: inline-block;}
 	.nav-menu .del-mob {display: none;}
+	.container2 {flex-direction: column};
+	.container2 > img {display: none;}
 }
-
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.ds-work-list section{ padding-right: 30px; }
-
 }
 
 @media (min-width: 768px){
@@ -233,7 +234,13 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	.event-j:hover .bar-j{height:40px;}
 }
 
+@media (max-width: 1199px){
+	.container2 > img {display: none;}
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
 	.ds-banner section{ padding-right: 0;}
 	.ds-work-list section{ padding-right: 30px; padding-bottom:60px; }
+	.container2 {flex-direction: column};
 }
+
