@@ -25,8 +25,8 @@ const eventData = [
     description:
       "Rescue Maze is a competition where participants build an autonomous robot to solve a maze and perform a variety of tasks. I participated as a member of RoBorregos and worked on the software team. My role was to develop the robot's control system and vision. The implementation of the control system was done using C++ and Arduino, and was integrated with the other submodules by using ROS. We competed in Monterrey, Mexico and participated in the national competition at Xalapa, Veracruz. The most challenging aspect of this project was getting to know ROS, Ubuntu, and image processing in a short period of time.",
     id: "maze",
-    link: "https://github.com/CarlosMtz1281/Hack_London",
-    img: "hack-london.jpg",
+    link: "https://docs.rbrgs.com/RescueMaze/;https://github.com/RoBorregos/rescuemaze-2023",
+    img: "maze.png;maze2.jpg",
   },
   {
     title: "Participated in London Hackathon",
